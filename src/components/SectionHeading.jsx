@@ -1,0 +1,1 @@
+import React from 'react';export default function SectionHeading({kicker,title,italic,copy,light=false}){return <div className={`section-heading ${light?'light':''}`}><div><span className="eyebrow"><i/> {kicker}</span><h2>{title} {italic&&<em>{italic}</em>}</h2></div>{copy&&<p>{copy}</p>}</div>}
